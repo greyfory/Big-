@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { width: 300px; padding: 10px; font-family: Arial, sans-serif; }
+        .status { margin: 10px 0; padding: 5px; border-radius: 3px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .info { background: #d1ecf1; color: #0c5460; }
+        button { width: 100%; padding: 8px; margin: 5px 0; }
+        input { width: 100%; padding: 5px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h3>Pi-hole Auto-Allow</h3>
+    <div id="current-domain"></div>
+    
+    <div>
+        <label>Device ID:</label>
+        <input type="text" id="device" placeholder="my-laptop" />
+        
+        <label>Token:</label>
+        <input type="password" id="token" placeholder="device-token" />
+        
+        <label>TTL Hours:</label>
+        <input type="number" id="ttl" value="4" min="1" max="24" />
+    </div>
+    
+    <button id="allow-btn">Allow Domain</button>
+    <button id="revoke-btn">Revoke Domain</button>
+    
+    <div id="status"></div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
