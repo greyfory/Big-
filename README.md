@@ -2,6 +2,9 @@
 
 Put the following project into practice and, observing the structure and any specifications, analyze everything carefully. Make only intelligent, well thought-out and ingenious decisions to implement everything perfectly:
 
+
+
+
 Monolith: Military-safe auto-allow for Pi-hole (ultra-deterministic, AI-formatted, all integrations)
 
 This is a single, self-contained blueprint and implementation that delivers the entire system in one file. It includes configuration schema, strict interfaces, deterministic control flow, integrated threat-intel updater, mediator API, approval logic, TTL expiry, spike detection with auto-revoke, optional Unbound hot-block, systemd and cron assets. It is designed so an AI (or human) can implement and deploy it with zero ambiguity.
